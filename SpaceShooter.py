@@ -430,6 +430,7 @@ def select_player_button(id):  #to return player id if the player is selected fr
 def delete_player_screen(): #display list of players  to delete
     while True:
             screen.fill(BLACK)
+            screen.blit(background,(0,0))
             scores = get_player_list()
             i=0
             slot=0
@@ -1031,5 +1032,16 @@ class Button:
 ###################################################
 main()
 c.close()
+
+import neat
+
+def run(config_path):
+    config=neat.Config(neat.DefaultGenome,neat.DefaultReproduction,neat.DefaultSpeciesSet,neat.DefaultStagnation,config_path)
+    pass
+import os
+if __name__=="__main__":
+    loc_dir=os.path.dirname(__file__)
+    config_path=os.path.join(loc_dir,"config.txt")
+    run(config_path)
 #pygame.quit()
 quit()
