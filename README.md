@@ -3,7 +3,7 @@ Space Shooter Game with Pygame
 
 Overview
 
-Welcome to the Space Shooter game, a classic arcade-style shoot 'em up built using Pygame. Embark on an intergalactic journey, face off against waves of enemy spaceships, and prove your piloting skills in this thrilling and action-packed game.
+Welcome to the Space Shooter game, a classic arcade-style shoot 'em up built using Pygame. Embark on an intergalactic journey,and prove your piloting skills in this thrilling and action-packed game.
 
 Features
 
