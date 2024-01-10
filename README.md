@@ -25,7 +25,7 @@ Pygame (install via pip install pygame)
 
 Getting Started
 
-Clone the repository: git clone [https://github.com/amalsam/spaceshooter.git
+Clone the repository: git clone https://github.com/amalsam/spaceshooter.git
 
 Navigate to the project directory: cd spaceshooter
 
