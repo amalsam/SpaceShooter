@@ -37,3 +37,9 @@ Arrow Keys: Move the spaceship
 
 Space Bar: Fire bullets
 
+
+SCREENSHOTS
+
+![Screenshot 2023-07-19 081454](https://github.com/amalsam/SpaceShooter/assets/47856775/f138d1b7-9860-49bf-a15b-d7f0be1e1f80)
+
+
