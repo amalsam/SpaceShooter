@@ -472,14 +472,14 @@ def eval_genomes(genomes,config):
     global gen
     gen+=1
 
-    for genome_id, genome in genomes:
-                genome.fitness = 0  # start with fitness level of 0
-                net = neat.nn.FeedForwardNetwork.create(genome, config)
-                nets.append(net)
-                player=Player()
-                players.append(player)
-                all_sprites.add(player)
-                ge.append(genome)
+    # for genome_id, genome in genomes:
+  # start with fitness level of 0
+    net = neat.nn.FeedForwardNetwork.create(genomes, config)
+    nets.append(net)
+    player=Player()
+    players.append(player)
+    all_sprites.add(player)
+    ge.append(genomes)
     try:
         with open("highscore.txt", "rb") as file:
             high_score = pickle.load(file)
@@ -717,18 +717,23 @@ def run(config_path):
 
     p=neat.Population(config)
     p.add_reporter(neat.StdOutReporter(True))
-    
     stats= neat.StatisticsReporter()
     p.add_reporter(stats)
     
     winner = p.run(eval_genomes, 10)
-    with open("best_genome.pkl", "wb") as file:
-        pickle.dump(winner, file)
+    
 
     print('\nBest genome:\n{!s}'.format(winner))
 import os
 if __name__=="__main__":
     loc_dir=os.path.dirname(__file__)
     config_path=os.path.join(loc_dir,"config-feedforward.txt")
-    run(config_path)
+    config = neat.config.Config(neat.DefaultGenome, neat.DefaultReproduction,
+                         neat.DefaultSpeciesSet, neat.DefaultStagnation,
+                         config_path)
+    with open("best_genome.pkl", "rb") as file:
+        genomes = pickle.load(file)
+    for o in range(0,6):
+        eval_genomes(genomes,config)
+    
 
