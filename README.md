@@ -40,6 +40,8 @@ Space Bar: Fire bullets
 
 SCREENSHOTS
 
-![Screenshot 2023-07-19 081454](https://github.com/amalsam/SpaceShooter/assets/47856775/f138d1b7-9860-49bf-a15b-d7f0be1e1f80)
+![screenshot1](https://github.com/amalsam/SpaceShooter/assets/47856775/5f032f97-a705-4f10-b91d-54639d9db446)
+![screenshot2](https://github.com/amalsam/SpaceShooter/assets/47856775/2a445ba2-864f-4384-a84e-314faa67b58e)
+![screenshot3](https://github.com/amalsam/SpaceShooter/assets/47856775/276c604a-7861-4b36-8d60-b65614013060)
 
 
