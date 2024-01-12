@@ -6,18 +6,26 @@ This repository contains the code for training an AI to play a space shooter gam
 
 ### Requirements
 Python 3.x
-NEAT library ''' pip install neat-python '''
-'''pip install pygame'''
+NEAT library 
+``` pip install neat-python ```
+
+``` pip install pygame ```
 
 ### Getting Started
 Clone the repository:
 
-''' git clone --branch training-AI https://github.com/amalsam/SpaceShooter.git '''
-'''cd SpaceShooter'''
+``` git clone --branch training-AI https://github.com/amalsam/SpaceShooter.git ```
+``` cd SpaceShooter ```
 
 ### Run the training script:
 
-python spaceshooter.py
+start training
+```python spaceshooter.py ```
+
+after training best genome will be saved in best_genome.pkl
+then run following command to view result
+
+```python best_genome.py```
 
 ### Configuration
 Adjust the parameters in the config-feedforward.txt file to fine-tune the NEAT algorithm and the game environment for optimal performance.
